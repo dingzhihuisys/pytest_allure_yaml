@@ -1,0 +1,11 @@
+-
+    name: 登录接口
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 758737541@qq.com
+            pwd: DZh123456
+            passportType: email
+            countryCode: 1
+    validate: None
