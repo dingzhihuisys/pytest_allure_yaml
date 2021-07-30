@@ -26,8 +26,6 @@ class TestPassport:
         result = SendRequestUrl().request_url(method, url, data, headers=header)
         result = json.loads(result)
         print(result)
-        if 'accessToken' in result:
-            return
 
 
 if __name__ == '__main__':
