@@ -1,5 +1,6 @@
+#用例01
 -
-    name: 登录接口
+    name: 登录接口01
     request:
         method: post
         url: https://eauth.downtown8.net/passport/login
@@ -7,5 +8,113 @@
             passport: 758737541@qq.com
             pwd: DZh123456
             passportType: email
+            countryCode: 1
+    validate: None
+#用例02
+-
+    name: 登录接口02
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 758737541@qq.com
+            pwd: DZh123456999999
+            passportType: email
+            countryCode: 1
+    validate: None
+#用例03
+-
+    name: 登录接口03
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport:
+            pwd: DZh123456
+            passportType: email
+            countryCode: 1
+    validate: None
+#用例04
+-
+    name: 登录接口04
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 758737541@qq.com
+            pwd:
+            passportType: email
+            countryCode: 1
+    validate: None
+#用例05
+-
+    name: 登录接口05
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 758737541qq.com
+            pwd: DZh123456
+            passportType: email
+            countryCode: 1
+    validate: None
+#用例06
+-
+    name: 登录接口06
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 17816852881
+            pwd: DZh123456
+            passportType: mobile
+            countryCode: 1
+    validate: None
+#用例07
+-
+    name: 登录接口07
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 17816852881
+            pwd:
+            passportType: mobile
+            countryCode: 1
+    validate: None
+#用例08
+-
+    name: 登录接口08
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 17816852881
+            pwd: 17816852881
+            passportType: mobile
+            countryCode: 1
+    validate: None
+#用例09
+-
+    name: 登录接口09
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport: 12345678919
+            pwd: 17816852881
+            passportType: mobile
+            countryCode: 1
+    validate: None
+#用例10
+-
+    name: 登录接口10
+    request:
+        method: post
+        url: https://eauth.downtown8.net/passport/login
+        data:
+            passport:
+            pwd: 17816852881
+            passportType: mobile
             countryCode: 1
     validate: None
