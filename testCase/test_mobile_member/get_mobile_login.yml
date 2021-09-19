@@ -1,0 +1,123 @@
+#用例01--正确手机验证码登录
+-
+    name: 手机端登录接口01
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 17816852881
+            countryCode: 86
+            captcha: 2662
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例02--手机号为空
+-
+    name: 手机端登录接口02
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile:
+            countryCode: 86
+            captcha: 2662
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例03--手机号验证码错误
+-
+    name: 手机端登录接口03
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 17816852881
+            countryCode: 86
+            captcha: 26629
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例04--手机号不正确
+-
+    name: 手机端登录接口04
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 12316852881
+            countryCode: 86
+            captcha: 2662
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例05--手机号countrycode错误
+-
+    name: 手机端登录接口05
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 17816852881
+            countryCode: 1
+            captcha: 2662
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例06--正确邮箱
+-
+    name: 手机端登录接口05
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 1002837527@qq.com
+            captcha: 2662
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例07--错误邮箱
+-
+    name: 手机端登录接口05
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 1002837527.com
+            captcha: 2662
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例08--邮箱验证码错误
+-
+    name: 手机端登录接口05
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 1002837527@qq.com
+            captcha: 2665
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+#用例09--邮箱和密码登录
+-
+    name: 手机端登录接口05
+    request:
+        method: post
+        url: https://memberservice.downtown8.net/member/login
+        data:
+            mobile: 1002837527@qq.com
+            captcha: 2665
+            storeId: 801467
+            source: mobile
+            brandId: 600102
+    validate: None
+

@@ -1,0 +1,7 @@
+pytest
+pytest-html
+pytest-xdist
+pytest-ordering
+pytest-returnfailures
+allure-pytest
+# pip install -r requiirements.txt
