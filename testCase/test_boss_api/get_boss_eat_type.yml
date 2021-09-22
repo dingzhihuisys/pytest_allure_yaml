@@ -1,0 +1,28 @@
+#用例01--正确参数查看数据(今日数据)
+-
+    name: boss_eat_type_用餐类型01
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-eat-type/
+        params:
+            start_time: 2021-08-23
+            end_time: 2021-08-23
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+        brandId: 600103
+    validate: None
+#用例02--正确参数查看数据(昨日数据)
+-
+    name: boss_eat_type_用餐类型01
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-eat-type/
+        params:
+            start_time: 2021-08-22
+            end_time: 2021-08-22
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+        brandId: 600103
+    validate: None
+
+# 其他异常case未处理--等等

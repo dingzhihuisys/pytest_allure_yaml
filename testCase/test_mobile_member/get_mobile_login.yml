@@ -70,7 +70,7 @@
     validate: None
 #用例06--正确邮箱
 -
-    name: 手机端登录接口05
+    name: 手机端登录接口06
     request:
         method: post
         url: https://memberservice.downtown8.net/member/login
@@ -83,7 +83,7 @@
     validate: None
 #用例07--错误邮箱
 -
-    name: 手机端登录接口05
+    name: 手机端登录接口07
     request:
         method: post
         url: https://memberservice.downtown8.net/member/login
@@ -96,7 +96,7 @@
     validate: None
 #用例08--邮箱验证码错误
 -
-    name: 手机端登录接口05
+    name: 手机端登录接口08
     request:
         method: post
         url: https://memberservice.downtown8.net/member/login
@@ -109,7 +109,7 @@
     validate: None
 #用例09--邮箱和密码登录
 -
-    name: 手机端登录接口05
+    name: 手机端登录接口09
     request:
         method: post
         url: https://memberservice.downtown8.net/member/login

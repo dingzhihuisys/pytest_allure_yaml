@@ -1,0 +1,77 @@
+#用例01--正确参数查看数据
+-
+    name: BosApi_关键指标01
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-kpi/
+        params:
+            start_time: 2021-08-24
+            end_time: 2021-08-24
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+        brandId: 600103
+    validate: None
+#用例02--入参开始时间为空
+-
+    name: BosApi_关键指标02
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-kpi/
+        params:
+            start_time:
+            end_time: 2021-08-24
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+        brandId: 600103
+    validate: None
+#用例03--入参结束时间为空
+-
+    name: BosApi_关键指标03
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-kpi/
+        params:
+            start_time: 2021-08-24
+            end_time: 2021-08-24
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+        brandId: 600103
+    validate: None
+#用例04--入参门店为空
+-
+    name: BosApi_关键指标04
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-kpi/
+        params:
+            start_time: 2021-08-24
+            end_time: 2021-08-24
+            store_id:
+        brandId: 600103
+    validate: None
+#用例05--入参品牌为空
+-
+    name: BosApi_关键指标06
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-kpi/
+        params:
+            start_time: 2021-08-24
+            end_time: 2021-08-24
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+        brandId:
+    validate: None
+#用例06--入参为单个门店
+-
+    name: BosApi_关键指标06
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-kpi/
+        params:
+            start_time: 2021-08-24
+            end_time: 2021-08-24
+            store_id: >-
+                800140
+        brandId: 600103
+    validate: None

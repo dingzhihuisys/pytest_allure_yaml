@@ -1,0 +1,45 @@
+#用例01--正确参数查看数据(day)
+-
+    name: boss_sales_trend_销售趋势01
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-sales-trend/
+        params:
+            start_time: 2021-08-11
+            end_time: 2021-08-24
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+            dimension: day
+        brandId: 600103
+    validate: None
+
+#用例02--正确参数查看数据(week)
+-
+    name: boss_sales_trend_销售趋势02
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-sales-trend/
+        params:
+            start_time: 2020-07-20
+            end_time: 2020-09-27
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+            dimension: week
+        brandId: 600103
+    validate: None
+
+#用例02--正确参数查看数据(week)
+-
+    name: boss_sales_trend_销售趋势03
+    request:
+        method: post
+        url: https://onedata.downtown8.net/report/jl-boss-sales-trend/
+        params:
+            start_time: 2020-02-01
+            end_time: 2020-09-20
+            store_id: >-
+                800140,800141,800142,800144,800145,800146,800147,800148,800149,800506,800564,800701,801980
+            dimension: month
+        brandId: 600103
+    validate: None
+# 其他异常case未处理----等等
